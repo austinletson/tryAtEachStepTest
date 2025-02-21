@@ -11,7 +11,6 @@ jobs:
       - uses: reviewdog/action-setup@v1
       - uses: actions/checkout@v4
       - uses: leanprover/lean-action@v1
-        shell: bash
       - name: run tryAtEachStep
         run: lake exe tryAtEachStep "exact?" TryAtEachStepTest.lean --outfile try_at_each_step_output.json
         shell: bash
@@ -20,6 +19,7 @@ jobs:
           cat try_at_each_step_output.json
           ls
           pwd
+        shell: bash
       - name: run reviewdog
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
