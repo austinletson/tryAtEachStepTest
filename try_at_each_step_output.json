@@ -1,0 +1,13 @@
+[{"startLine": 8,
+  "startCol": 2,
+  "shortenedStepsCount": 2,
+  "parentName": "test",
+  "oldToEndOfBranch": "have : 1 = 1 := by rfl\n  rfl",
+  "oldText": "have : 1 = 1 := by rfl",
+  "oldProof": "let_fun this := Eq.refl 1;\nEq.refl (1 + 1)",
+  "newText": "exact?",
+  "newProof": "rfl",
+  "message": "Try this: exact rfl",
+  "goalIsProp": true,
+  "filepath":
+  "/home/austin/development/lean/tryAtEachStepTest/TryAtEachStepTest.lean"}]
