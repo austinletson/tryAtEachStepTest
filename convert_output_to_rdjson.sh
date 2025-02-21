@@ -14,13 +14,23 @@ cat try_at_each_step_output.json |  jq '{
           column: .startCol
         },
         end: {
-          line: (.startLine + 1),
+          line: .startLine,
           column: .startCol
         }
       }
     },
     severity: "INFO",
     suggestions: [{
+      range: {
+        start: {
+          line: .startLine,
+          column: .startCol
+        },
+        end: {
+          line: .startLine,
+          column: .startCol
+        }
+      },
       text: .newText
     }]
   })
