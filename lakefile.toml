@@ -1,0 +1,15 @@
+name = "tryAtEachStepTest"
+version = "0.1.0"
+defaultTargets = ["tryateachsteptest"]
+
+[[lean_lib]]
+name = "TryAtEachStepTest"
+
+[[lean_exe]]
+name = "tryateachsteptest"
+root = "Main"
+
+[[require]]
+name = "tryAtEachStep"
+git = "https://github.com/dwrensha/tryAtEachStep"
+rev = "main"

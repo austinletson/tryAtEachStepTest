@@ -1,0 +1,15 @@
+{"version": "1.1.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/dwrensha/tryAtEachStep",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "01f5175e58afba211f899c909815cce83c70344c",
+   "name": "tryAtEachStep",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "main",
+   "inherited": false,
+   "configFile": "lakefile.toml"}],
+ "name": "tryAtEachStepTest",
+ "lakeDir": ".lake"}
