@@ -1,11 +1,10 @@
 name: Review dog test
 
 on:
-  issue_comment:
-    types: [created, edited, deleted]
+  pull_request:
 
 jobs:
-  suggest_try_at_each_set:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
