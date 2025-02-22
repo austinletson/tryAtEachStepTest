@@ -1,10 +1,12 @@
 name: Review dog test
 
 on:
-  pull_request:
+  issue_comment:
+    types: [created, edited, deleted]
 
 jobs:
-  build:
+  suggest_try_at_each_set:
+    if: ${{ github.event.issue.pull_reqeust }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

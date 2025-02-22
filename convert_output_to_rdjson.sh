@@ -31,7 +31,7 @@ cat try_at_each_step_output.json |  jq '{
           column: .startCol
         }
       },
-      text: .newText
+      text: .newProof
     }]
   })
 }'
